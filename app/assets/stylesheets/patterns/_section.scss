@@ -3,8 +3,12 @@
 }
 
 .section--hero {
+  align-items: center;
+  display: flex;
   height: 50vh;
+  justify-content: center;
   min-height: em(300);
+  text-align: center;
 }
 
 .section--light {
@@ -13,4 +17,10 @@
 
 .section--dark {
   background-color: $dark-background-color;
+}
+
+.section__container {
+  margin: auto;
+  padding: $base-section-padding;
+  max-width: $large-screen;
 }
