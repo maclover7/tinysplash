@@ -1,0 +1,16 @@
+.section {
+  width: 100%;
+}
+
+.section--hero {
+  height: 50vh;
+  min-height: em(300);
+}
+
+.section--light {
+  background-color: $light-background-color;
+}
+
+.section--dark {
+  background-color: $dark-background-color;
+}
