@@ -30,6 +30,7 @@ $light-gray: #DDD;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
+$mint-green: #75eea6;
 
 // Background Color
 $base-background-color: white;
@@ -45,6 +46,12 @@ $base-link-color: $base-accent-color;
 $hover-link-color: darken($base-accent-color, 15);
 $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;
+
+// Button Colors
+$base-button-background-color: $mint-green;
+$base-button-color: darken($base-button-background-color, 50%);
+$light-button-background-color: #fff;
+$light-button-color: #fff;
 
 // Flash Colors
 $alert-color: $light-yellow;
@@ -68,4 +75,5 @@ $form-font-family: $base-font-family;
 
 // Layouts
 $base-padding: 1em;
+$base-button-padding: 0.75em;
 $base-section-padding: $base-padding * 6;

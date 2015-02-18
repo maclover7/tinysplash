@@ -1,0 +1,22 @@
+.button {
+  background-color: $base-button-background-color;
+  border: solid 1px $base-button-background-color;
+  border-radius: $base-border-radius;
+  color: $base-button-color;
+  display: inline-block;
+  padding: $base-button-padding $base-button-padding * 2;
+}
+
+.button--border {
+  background-color: transparent;
+}
+
+.button--light {
+  background-color: $light-button-background-color;
+  border: solid 1px $light-button-background-color;
+  color: $light-button-color;
+
+  &.button--border {
+    background-color: transparent;
+  }
+}
