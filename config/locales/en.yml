@@ -26,3 +26,53 @@ en:
      collecting emails of potential customers. Tinysplash is also great for a/b
      testing your company’s motto, validating your idea, and learning about your
      target market.
+
+  links:
+    back: Back
+    cancel_account: Cancel your account
+    forgot_password: Forgot Password?
+    sign_in: Sign in
+    sign_out: Sign out
+    sign_up: Sign up
+
+  buttons:
+    edit_password: Change password
+    new_password: Reset password
+    sign_in: Sign in
+    sign_up: Sign up
+    update: Update
+
+  copy:
+    awaiting_email_confirmation: We are awaiting email confirmation.
+    confirm: Are you sure?
+    unhappy: Unhappy?
+
+  headers:
+    cancel_account: Cancel your account
+    edit_password: Change your password
+    edit_registration: Update your account
+    new_password: Forgot your password?
+    sign_in: Sign In
+    sign_up: Sign Up
+
+  simple_form:
+    "yes": 'Yes'
+    "no": 'No'
+    required:
+      text: 'required'
+      mark: '*'
+    error_notification:
+      default_message: "Please review the problems below:"
+    labels:
+      defaults:
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Password Confirmation"
+      passwords:
+        edit:
+          password: New password
+          password_confirmation: Confirm your new password.
+    hints:
+      leave_blank: Leave this blank if you don't want to update it.
+      need_password: You must provide a password.
+      password: "%{minimum} characters required"

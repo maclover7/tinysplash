@@ -1,11 +1,16 @@
 section class="section"
   div class="section__container"
     h2
-      | Forgot your password?
-    = simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
+      | t("headers.new_password")
+    = simple_form_for( \
+      resource,
+      as: resource_name,
+      url: password_path(resource_name),
+      html: { method: :post },
+    ) do |f|
       = f.error_notification
       .form-inputs
         = f.input :email, required: true, autofocus: true
       .form-actions
-        = f.button :submit, "Send me reset password instructions"
+        = f.button :submit, t("buttons.new_password")
     = render "users/shared/links"
