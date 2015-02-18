@@ -1,7 +1,7 @@
 section class="section"
   div class="section__container"
     h2
-      | t("headers.new_password")
+      == t("headers.new_password")
     = simple_form_for( \
       resource,
       as: resource_name,
