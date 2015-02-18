@@ -8,5 +8,5 @@ section class="section"
         = f.input :password, required: false
         = f.input :remember_me, as: :boolean if devise_mapping.rememberable?
       .form-actions
-        = f.button :submit, t("buttons.sign_in")
+        = f.button :submit, t("buttons.sign_in"), class: "button"
     = render "users/shared/links"

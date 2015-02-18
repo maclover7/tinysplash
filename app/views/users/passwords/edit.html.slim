@@ -15,5 +15,5 @@ section class="section"
         = f.input :password, required: true, autofocus: true
         = f.input :password_confirmation, required: true
       .form-actions
-        = f.button :submit, t("buttons.edit_password")
+        = f.button :submit, t("buttons.edit_password"), class: "button"
     = render "users/shared/links"

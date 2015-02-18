@@ -20,5 +20,5 @@ section class="section"
         )
         = f.input :password_confirmation, required: true
       .form-actions
-        = f.button :submit, t("buttons.sign_up")
+        = f.button :submit, t("buttons.sign_up"), class: "button"
     = render "users/shared/links"

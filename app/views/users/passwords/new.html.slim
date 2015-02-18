@@ -12,5 +12,5 @@ section class="section"
       .form-inputs
         = f.input :email, required: true, autofocus: true
       .form-actions
-        = f.button :submit, t("buttons.new_password")
+        = f.button :submit, t("buttons.new_password"), class: "button"
     = render "users/shared/links"
