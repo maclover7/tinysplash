@@ -7,4 +7,6 @@ class User < ActiveRecord::Base
     :trackable,
     :validatable
   )
+
+  has_many :businesses
 end

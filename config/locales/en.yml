@@ -30,12 +30,14 @@ en:
   links:
     cancel_account: Cancel your account
     forgot_password: Forgot Password?
+    new_business: Add a business
     sign_in: Sign in
     sign_out: Sign out
     sign_up: Sign up
 
   buttons:
     edit_password: Change password
+    new_business: Add Business
     new_password: Reset password
     sign_in: Sign in
     sign_up: Sign up
@@ -65,6 +67,8 @@ en:
     labels:
       defaults:
         email: "Email"
+        mission: Mission Statement
+        name: Name
         password: "Password"
         password_confirmation: "Password Confirmation"
       passwords:

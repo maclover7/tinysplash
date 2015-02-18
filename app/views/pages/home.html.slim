@@ -1,14 +1,4 @@
-section class="section section--hero hero--home"
-  nav class="navigation--main"
-    - if user_signed_in?
-      == link_to t("links.sign_out"),
-        destroy_user_session_path,
-        method: :delete,
-        class: "button"
-    - else
-      == link_to t("links.sign_in"),
-        new_user_session_path,
-        class: "button button--border button--light"
+section class="section section--hero"
   div
     == image_tag "tinysplash-logo.svg", alt: t("home.company_name")
     h5 == t("home.company_motto")
