@@ -6,7 +6,7 @@ feature "User signs up" do
     click_on "Sign up"
 
     fill_in "Email", with: "user@example.com"
-    fill_in "Password", with: "password"
+    fill_in "* Password", with: "password", exact: true
     fill_in "Password confirmation", with: "password"
     click_on "Sign up"
 
