@@ -52,6 +52,7 @@ en:
     cancel_account: Cancel your account
     edit_password: Change your password
     edit_registration: Update your account
+    new_business: Add a Business
     new_password: Forgot your password?
     sign_in: Sign In
     sign_up: Sign Up
@@ -77,5 +78,6 @@ en:
           password_confirmation: Confirm your new password.
     hints:
       leave_blank: Leave this blank if you don't want to update it.
+      mission_statement: Your mission statement succintly sums up the value your business provides. It must be no more than 144 characters.
       need_password: You must provide a password.
       password: "%{minimum} characters required"

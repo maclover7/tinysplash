@@ -12,4 +12,15 @@ feature "User creates a business" do
 
     expect(page).to have_content "Example Company"
   end
+
+  scenario "without business name" do
+    sign_in
+
+    visit root_path
+    click_on t("links.new_business")
+    click_on t("buttons.new_business")
+
+    expect(page).to have_content t("headers.new_business")
+    expect(page).to have_content "can't be blank"
+  end
 end

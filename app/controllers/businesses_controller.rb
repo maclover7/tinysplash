@@ -8,9 +8,12 @@ class BusinessesController < ApplicationController
   end
 
   def create
-    business = Business.create(business_params)
-    current_user.businesses << business
-    redirect_to business
+    @business = Business.new(business_params)
+    if current_user.businesses << @business
+      redirect_to @business
+    else
+      render :new
+    end
   end
 
   private

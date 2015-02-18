@@ -1,4 +1,7 @@
+h1
+  = t("headers.new_business")
+
 == simple_form_for @business do |form|
   == form.input :name
-  == form.input :mission
+  == form.input :mission, hint: t("simple_form.hints.mission_statement")
   == form.button :submit, t("buttons.new_business")
