@@ -1,13 +1,17 @@
-nav
-  - if user_signed_in?
-    == link_to t("links.sign_out"), destroy_user_session_path, method: :delete
-  - else
-    == link_to t("links.sign_up"), new_user_registration_path
-    == link_to t("links.sign_in"), new_user_session_path
-
-section class="section section--hero"
+section class="section section--hero hero--home"
+  nav class="navigation--main"
+    - if user_signed_in?
+      == link_to t("links.sign_out"),
+        destroy_user_session_path,
+        method: :delete,
+        class: "button"
+    - else
+      == link_to t("links.sign_up"), new_user_registration_path, class: "button"
+      == link_to t("links.sign_in"),
+        new_user_session_path,
+        class: "button button--border button--light"
   div
-    h1 == t("home.company_name")
+    == image_tag "tinysplash-logo.svg", alt: t("home.company_name")
     h5 == t("home.company_motto")
 
 section class="section section--light"

@@ -1,8 +1,9 @@
 // Typography
 $sans-serif: $helvetica;
-$serif: $georgia;
-$base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
+$serif: "Lora";
+$slab: "Roboto Slab";
+$base-font-family: $serif;
+$header-font-family: $slab;
 
 // Font Sizes
 $base-font-size: 1em;
@@ -14,7 +15,7 @@ $h5-font-size: $base-font-size * 1.25;
 $h6-font-size: $base-font-size;
 
 // Line height
-$base-line-height: 1.5;
+$base-line-height: 1.6;
 $header-line-height: 1.25;
 
 // Other Sizes
@@ -26,20 +27,21 @@ $base-z-index: 0;
 $blue: #477DCA;
 $dark-gray: #333;
 $medium-gray: #999;
-$light-gray: #DDD;
+$light-gray: #f2f2f2;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 $mint-green: #75eea6;
 
 // Background Color
-$base-background-color: white;
+$base-background-color: #fff;
 $light-background-color: $light-gray;
 $dark-background-color: $dark-gray;
 
 // Font Colors
 $base-font-color: $dark-gray;
 $base-accent-color: $blue;
+$light-header-color: #fff;
 
 // Link Colors
 $base-link-color: $base-accent-color;
@@ -77,3 +79,4 @@ $form-font-family: $base-font-family;
 $base-padding: 1em;
 $base-button-padding: 0.75em;
 $base-section-padding: $base-padding * 6;
+$base-button-padding: 0.75em;
