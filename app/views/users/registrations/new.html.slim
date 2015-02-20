@@ -9,7 +9,7 @@ section class="section"
     ) do |f|
       = f.error_notification
       .form-inputs
-        = f.input :email, required: true, autofocus: true
+        = f.input :email, required: true
         = f.input( \
           :password,
           required: true,
@@ -21,4 +21,4 @@ section class="section"
         = f.input :password_confirmation, required: true
       .form-actions
         = f.button :submit, t("buttons.sign_up"), class: "button"
-    = render "users/shared/links"
+    = link_to t("links.sign_in"), new_session_path(resource_name)

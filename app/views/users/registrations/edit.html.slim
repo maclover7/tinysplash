@@ -42,4 +42,4 @@ section class="section"
           data: { confirm: t("copy.confirm") },
           method: :delete,
         )
-    = link_to t("links.back"), :back
+    = link_to t("links.sign_in"), new_session_path(resource_name)

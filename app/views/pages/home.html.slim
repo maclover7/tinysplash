@@ -6,7 +6,6 @@ section class="section section--hero hero--home"
         method: :delete,
         class: "button"
     - else
-      == link_to t("links.sign_up"), new_user_registration_path, class: "button"
       == link_to t("links.sign_in"),
         new_user_session_path,
         class: "button button--border button--light"
@@ -17,3 +16,8 @@ section class="section section--hero hero--home"
 section class="section section--light"
   div class="section__container"
     == t("home.introduction")
+
+- if !user_signed_in?
+  section class="section"
+    div class="section__container"
+      == render template: "users/registrations/new"

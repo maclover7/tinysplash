@@ -16,4 +16,5 @@ section class="section"
         = f.input :password_confirmation, required: true
       .form-actions
         = f.button :submit, t("buttons.edit_password"), class: "button"
-    = render "users/shared/links"
+    = link_to t("links.sign_in"), new_session_path(resource_name)
+    = link_to t("links.sign_up"), new_registration_path(resource_name)
