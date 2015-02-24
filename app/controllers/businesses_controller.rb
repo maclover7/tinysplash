@@ -8,7 +8,7 @@ class BusinessesController < ApplicationController
   end
 
   def show
-    @business = Business.find(params[:id])
+    @business = Business.friendly.find(params[:id])
   end
 
   def create

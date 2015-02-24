@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   get "tinysplash", to: "high_voltage/pages#show", id: "marketing"
 
   resources :businesses
+
+  get "/:id" => "businesses#show"
 end
