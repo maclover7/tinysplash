@@ -6,6 +6,6 @@ nav class="navigation--main"
         method: :delete,
         class: "button"
   - else
-    = link_to t("links.sign_in"),
+    == link_to t("links.sign_in"),
         new_user_session_path,
-        class: "button"
+        class: "button button--border button--light"
