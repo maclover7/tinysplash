@@ -4,4 +4,4 @@ deployment:
     commands:
       - git push -f git@heroku.com:tinysplash-staging.git $CIRCLE_SHA1:refs/heads/master
       - heroku run rake db:migrate --app tinysplash-staging:
-        timeout: 400
+          timeout: 400
