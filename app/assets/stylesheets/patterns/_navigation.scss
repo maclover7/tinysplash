@@ -1,12 +1,27 @@
 .navigation--main {
-  @include position(absolute, 0 0 null 0);
+  border-bottom: solid 1px $light-gray;
   text-align: right;
+  z-index: 1;
 
   .button {
     margin: 1em;
   }
 
+  .landing & {
+    @include position(absolute, 0 0 null 0);
+    border-bottom: none;
+
+    .button {
+      @extend .button--light;
+      @extend .button--border;
+    }
+  }
+
   .button + .button {
     margin-left: 0;
+  }
+
+  a {
+    margin-left: 1em;
   }
 }

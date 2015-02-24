@@ -1,7 +1,9 @@
-h1
-  = t("headers.new_business")
+div class="section"
+  div class="section__container section__container--medium"
+    h1
+      = t("headers.new_business")
 
-== simple_form_for @business do |form|
-  == form.input :name
-  == form.input :mission, hint: t("simple_form.hints.mission_statement")
-  == form.button :submit, t("buttons.new_business")
+    == simple_form_for @business do |form|
+      == form.input :name
+      == form.input :mission, hint: t("simple_form.hints.mission_statement")
+      == form.button :submit, t("buttons.new_business"), class: "button"

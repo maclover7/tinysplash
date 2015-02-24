@@ -1,6 +1,11 @@
-nav
+nav class="navigation--main"
   - if user_signed_in?
-    == link_to t("links.sign_out"), destroy_user_session_path, method: :delete
+    = link_to t("links.home"), root_path
+    = link_to t("links.sign_out"),
+        destroy_user_session_path,
+        method: :delete,
+        class: "button"
   - else
-    == link_to t("links.sign_up"), new_user_registration_path
-    == link_to t("links.sign_in"), new_user_session_path
+    = link_to t("links.sign_in"),
+        new_user_session_path,
+        class: "button"

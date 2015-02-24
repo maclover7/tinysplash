@@ -1,0 +1,17 @@
+@include keyframes(retract) {
+  0% {
+    top: -100%;
+  }
+
+  20% {
+    top: 0%;
+  }
+
+  80% {
+    top: 0%;
+  }
+
+  100% {
+    top: -100%;
+  }
+}

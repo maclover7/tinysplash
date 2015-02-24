@@ -25,5 +25,12 @@
 .section__container {
   margin: auto;
   padding: $base-section-padding;
+}
+
+.section__container--medium {
+  max-width: $medium-screen;
+}
+
+.section__container--large {
   max-width: $large-screen;
 }

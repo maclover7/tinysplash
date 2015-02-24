@@ -13,6 +13,12 @@ $success-color: #e6efc2 !default;
   padding: $base-spacing / 2;
   text-align: center;
 
+  .landing & {
+    @include position(fixed, -100% 0 null 0);
+    @include animation(retract 5s ease);
+    z-index: 2;
+  }
+
   a {
     color: darken($color, 70%);
 

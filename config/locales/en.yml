@@ -30,6 +30,7 @@ en:
   links:
     cancel_account: Cancel your account
     forgot_password: Forgot Password?
+    home: Home
     new_business: Add a business
     sign_in: Sign in
     sign_out: Sign out

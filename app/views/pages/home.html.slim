@@ -1,13 +1,15 @@
-section class="section section--hero"
+- content_for :body_class, "landing"
+
+section class="section section--hero hero--home"
   div
     == image_tag "tinysplash-logo.svg", alt: t("home.company_name")
     h5 == t("home.company_motto")
 
 section class="section section--light"
-  div class="section__container"
+  div class="section__container section__container--large"
     == t("home.introduction")
 
 - if !user_signed_in?
   section class="section"
-    div class="section__container"
+    div class="section__container section__container--large"
       == render template: "users/registrations/new"

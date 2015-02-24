@@ -7,7 +7,7 @@ html
     title == title
     == stylesheet_link_tag :application, media: "all"
     == csrf_meta_tags
-  body.body_class class="#{body_class}"
+  body class="#{body_class} #{yield :body_class}"
     == render "header"
     == render "flashes"
     == yield
