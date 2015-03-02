@@ -7,4 +7,15 @@ section class="section section--hero section--full-screen hero--home"
     p class="margin-top"
       = t("home.company_selling_point")
 
+    div class="marketing-form"
+      = simple_form_for :guest,
+        url: "https://formkeep.com/f/6a792507ced8",
+        method: "post" do |form|
+        = form.input :email,
+          name: "email",
+          placeholder: "email",
+          wrapper: false,
+          label: false
+        = form.submit class: "button", value: "Sign Up"
+
     div class="bottom-browser"
