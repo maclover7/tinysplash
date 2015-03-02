@@ -4,6 +4,8 @@ section class="section section--hero hero--home"
   div
     == image_tag "tinysplash-logo.svg", alt: t("home.company_name")
     h5 == t("home.company_motto")
+    a href="#" class="button margin-top" data-scroll-to=".sign-in"
+      | Build my landing page today!
 
 section class="section section--light"
   div class="section__container section__container--large"
@@ -11,5 +13,5 @@ section class="section section--light"
 
 - if !user_signed_in?
   section class="section"
-    div class="section__container section__container--large"
+    div class="section__container section__container--large sign-in"
       == render template: "users/registrations/new"

@@ -1,10 +1,22 @@
 .button {
+  @include position(relative);
   background-color: $base-button-background-color;
-  border: solid 1px $base-button-background-color;
   border-radius: $base-border-radius;
-  color: $base-button-color;
+  border: solid 1px $base-button-background-color;
   display: inline-block;
+  font-family: $slab;
   padding: $base-button-padding $base-button-padding * 2;
+
+  &,
+  a {
+    color: $base-button-color;
+  }
+
+  &:hover,
+  a:hover {
+    background-color: lighten($base-button-background-color, 5%);
+    color: lighten($base-button-color, 5%);
+  }
 }
 
 .button--border {
