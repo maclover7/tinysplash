@@ -5,8 +5,8 @@ if Rails.env.development? || Rails.env.test?
     desc "Seed data for development environment"
     task prime: "db:setup" do
       include FactoryGirl::Syntax::Methods
-
-      # create(:user, email: "user@example.com", password: "password")
+      user = create(:user)
+      create(:business, user: user)
     end
   end
 end
