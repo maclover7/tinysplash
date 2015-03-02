@@ -1,0 +1,44 @@
+.bottom-browser {
+  @include position(absolute, null null 0 50%);
+  @include size(80% 30%);
+  @include transform(translate(-50%));
+  background-image: asset-url("small-site.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px;
+  box-shadow: 0 50px 50px rgba($black, 0.5);
+
+  @include media($medium-screen) {
+    @include size(50% 40%);
+    max-width: 800px;
+  }
+}
+
+.marketing-form {
+  @include outer-container;
+  margin: 0 auto;
+  max-width: 40em;
+  padding: 0 2em;
+
+  @include media($medium-screen) {
+    padding: 0;
+  }
+
+  input[type="email"] {
+    @include span-columns(8, block-collapse);
+    background: rgba($white, 0.5);
+    border: solid 2px transparent;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: none;
+    display: inline-block;
+    padding: $base-button-padding $base-button-padding * 2;
+  }
+
+  input[type="submit"] {
+    @include span-columns(4);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+}

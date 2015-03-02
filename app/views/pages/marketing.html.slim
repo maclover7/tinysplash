@@ -1,0 +1,10 @@
+- content_for :body_class, "marketing"
+
+section class="section section--hero section--full-screen hero--home"
+  div
+    = image_tag "tinysplash-logo.svg", alt: t("home.company_name")
+    h5 = t("home.company_motto")
+    p class="margin-top"
+      = t("home.company_selling_point")
+
+    div class="bottom-browser"

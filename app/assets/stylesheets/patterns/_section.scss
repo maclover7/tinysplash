@@ -4,14 +4,21 @@
 }
 
 .section--hero {
-  padding: 20vh 0;
   min-height: em(300);
+  padding: 20vh 0;
   text-align: center;
 
   h1,
-  h5 {
+  h5,
+  p {
     color: $light-header-color;
   }
+}
+
+.section--full-screen {
+  height: 100vh;
+  min-height: $iphone-five-height;
+  width: 100vw;
 }
 
 .section--light {

@@ -5,5 +5,7 @@ Rails.application.routes.draw do
     root "businesses#index", as: :user
   end
 
+  get "tinysplash", to: "high_voltage/pages#show", id: "marketing"
+
   resources :businesses
 end

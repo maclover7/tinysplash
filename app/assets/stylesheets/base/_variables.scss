@@ -24,14 +24,16 @@ $base-spacing: $base-line-height * 1em;
 $base-z-index: 0;
 
 // Colors
+$black: #000;
 $blue: #477DCA;
 $dark-gray: #333;
-$medium-gray: #999;
 $light-gray: #f2f2f2;
+$light-green: #E6EFC2;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
-$light-green: #E6EFC2;
+$medium-gray: #999;
 $mint-green: #75eea6;
+$white: #fff;
 
 // Background Color
 $base-background-color: #fff;
@@ -81,3 +83,5 @@ $base-button-padding: 0.75em;
 $base-section-padding: $base-padding * 6;
 $base-button-padding: 0.75em;
 $base-margin: 1em;
+$medium-screen: 640px;
+$iphone-five-height: 640px;
