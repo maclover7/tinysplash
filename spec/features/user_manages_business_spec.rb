@@ -27,3 +27,31 @@ feature "User creates a business" do
     expect(page).to have_content "can't be blank"
   end
 end
+
+feature "User views a list of businesses" do
+  scenario "and sees their own businesses" do
+    user = create(:user, email: "user@example.com", password: "password")
+    business_one = create(:business, user: user, name: "Business 1")
+    business_two = create(:business, user: user, name: "Business 2")
+
+    sign_in_with(email: user.email, password: user.password)
+
+    visit businesses_path
+
+    expect(page).to have_content business_one.name
+    expect(page).to have_content business_two.name
+  end
+
+  scenario "and does not see any other users businessess" do
+    user_one = create(:user, email: "user@example.com", password: "password")
+    user_two = create(:user, email: "user+2@example.com", password: "password")
+
+    business_one = create(:business, user: user_two, name: "Business 1")
+
+    sign_in_with(email: user_one.email, password: user_one.password)
+
+    visit businesses_path
+
+    expect(page).not_to have_content business_one.name
+  end
+end

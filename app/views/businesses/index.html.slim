@@ -1,0 +1,11 @@
+div class="section"
+  div class="section__container section__container--medium"
+    h1
+      = t("headers.my_businesses")
+
+    ul class="businesses"
+      - @businesses.each do |business|
+        li class="business"
+          = business.name
+
+    = link_to t("links.new_business"), new_business_path, class: "button"

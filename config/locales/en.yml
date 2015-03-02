@@ -50,6 +50,7 @@ en:
     unhappy: Unhappy?
 
   headers:
+    my_businesses: My Businesses
     cancel_account: Cancel your account
     edit_password: Change your password
     edit_registration: Update your account

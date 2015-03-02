@@ -1,4 +1,8 @@
 class BusinessesController < ApplicationController
+  def index
+    @businesses = current_user.businesses
+  end
+
   def new
     @business = Business.new
   end
