@@ -12,10 +12,9 @@ section class="section section--hero section--full-screen hero--home"
         url: "https://formkeep.com/f/6a792507ced8",
         method: "post" do |form|
         = form.input :email,
-          name: "email",
-          placeholder: "email",
+          placeholder: "user@example.com",
           wrapper: false,
           label: false
-        = form.submit class: "button", value: "Sign Up"
+        = form.submit class: "button", value: t("buttons.sign_up")
 
     div class="bottom-browser"
