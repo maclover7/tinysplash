@@ -9,7 +9,7 @@ section class="section section--hero section--full-screen hero--home"
 
     div class="marketing-form"
       = simple_form_for :guest,
-        url: "https://formkeep.com/f/6a792507ced8",
+        url: ENV["MARKETING_FORM_URL"],
         method: "post" do |form|
         = form.input :email,
           placeholder: "user@example.com",
