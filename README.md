@@ -5,7 +5,7 @@
 [![Circle CI](https://circleci.com/gh/thoughtbot/tinysplash.svg?style=svg)](https://circleci.com/gh/thoughtbot/tinysplash)
 
 Tinysplash is a collection of free tools to help validate a business idea. Using
-simple landing pages with "fake doors" and email collection will help tinysplash
+simple landing pages with "fake doors" and email collection will help Tinysplash
 users gauge the interest around their product idea while collecting the emails
 of potential customers.
 
